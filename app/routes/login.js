@@ -9,6 +9,6 @@ export default Ember.Route.extend({
     },
     deactivate: function () {
         Ember.$('body').toggleClass("login-page");
-    }
+    },
 
 });

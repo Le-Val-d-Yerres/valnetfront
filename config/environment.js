@@ -25,6 +25,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.APP.apiurl = "http://valnetapi"
   }
 
   if (environment === 'test') {
@@ -40,7 +41,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+      ENV.APP.apiurl = "http://valnetapi"
   }
 
   return ENV;
