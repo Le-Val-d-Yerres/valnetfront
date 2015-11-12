@@ -11,7 +11,7 @@ export default Ember.Controller.extend({
 
             $.ajax({
                 type: "POST",
-                url: "/api/authentication/login/",
+                url: "/api/v1/account/login/",
                 data: {useremail: this.get('formemail'), userpassword: this.get('formpassword')}
             });
             this.transitionToRoute('contactform');
