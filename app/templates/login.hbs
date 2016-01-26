@@ -25,6 +25,12 @@
                 </div>
             </form>
 
+            {{#if alert}}
+            <br/>
+            <div class="alert {{alert_mode}}">
+            <p><i class="icon fa {{alert_icon}}"></i> {{alert}}</p>
+            </div>
+            {{/if}}
             <a href="#">J'ai oublié mon mot de passe</a><br>
 
         </div><!-- /.login-box-body -->
