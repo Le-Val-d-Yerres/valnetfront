@@ -14,7 +14,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Tableau de bord
+                Prendre un congé
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Tableau de bord</a></li>
@@ -25,6 +25,64 @@
         <section class="content">
             <!-- Small boxes (Stat box) -->
             <div class="row">
+                <section class="col-lg-5">
+                    <div class="box">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Sélection des périodes</h3>
+                        </div><!-- /.box-header -->
+                        <div class="box-body">
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <th>Type de congé</th>
+                                    <th>Date début</th>
+                                    <th>Date Fin</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select class="form-control">
+                                            <option>Congés annuels</option>
+                                            <option>RTT</option>
+                                            <option>CET</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="input-group date" data-provide="datepicker">
+                                            <input type="text" class="form-control">
+                                            <div class="input-group-addon">
+                                                <span class="glyphicon glyphicon-th"></span>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                    <td><div class="input-group date" data-provide="datepicker">
+                                            <input type="text" class="form-control">
+                                            <div class="input-group-addon">
+                                                <span class="glyphicon glyphicon-th"></span>
+                                            </div>
+                                        </div></td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="3">
+                                    <div class="pull-right">
+                                        <button class="btn  btn-primary" >Ajouter une autre période</button>
+                                    </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                        <div class="box-footer clearfix">
+                            <div class="pull-right">
+                            <button class="btn  btn-primary" {{action "poserconge"}}>Valider ce congé</button>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- Small boxes (Stat box) -->
+
                 <section class="col-lg-5">
                     <div class="box">
                         <div class="box-header with-border">
@@ -52,48 +110,6 @@
                                 <tr>
 
                                 </tr>
-                                </tbody>
-                            </table>
-                        </div><!-- /.box-body -->
-                        <div class="box-footer clearfix">
-                            <button class="btn btn-block btn-primary" {{action "poserconge"}}>Prendre un congé</button>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-lg-7">
-                    <div class="box">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Dernier documents publiés</h3>
-                        </div><!-- /.box-header -->
-                        <div class="box-body">
-                            <table class="table table-bordered">
-                                <tbody>
-                                <tr>
-                                    <th>Date</th>
-                                    <th>Titre du document</th>
-                                    <th>Lien</th>
-                                </tr>
-                                <tr>
-                                    <td>15/01/2016</td>
-                                    <td>Note de service portant sur n'importe quoi</td>
-                                    <td><a href="#">Voir ce document</a></td>
-                                </tr>
-                                <tr>
-                                    <td>14/12/2015</td>
-                                    <td>Note de service portant sur autre chose</td>
-                                    <td><a href="#">Voir ce document</a></td>
-                                </tr>
-                                <tr>
-                                    <td>11/10/2015</td>
-                                    <td>Calendrier des concours de Cat B</td>
-                                    <td><a href="#">Voir ce document</a></td>
-                                </tr>
-                                <tr>
-                                    <td>11/09/2015</td>
-                                    <td>Liste des nouvelles prestations CNAS</td>
-                                    <td><a href="#">Voir ce document</a></td>
-                                </tr>
-
                                 </tbody>
                             </table>
                         </div><!-- /.box-body -->
